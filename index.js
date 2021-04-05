@@ -4,7 +4,6 @@ window.addEventListener("load", function () {
   loader.className += " hidden";
 });
 
-
 document.addEventListener('readystatechange', event => { 
 
   if (event.target.readyState === "complete") {
