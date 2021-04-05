@@ -1,12 +1,54 @@
-.static-image {
-  width: 10vw;
-  height: 20vh;
-}
-
-.img-holder {
-  object-fit: contain;
+@font-face {
+  /* !Custom Font */
+  font-family: "Child Writing";
+  src: url("Fonts/ChildWriting-Regular.woff2") format("woff2"),
+    url("Fonts/ChildWriting-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
   background-color: black;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.container {
+  /* !Img fill */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 20%;
+}
+
+.animated-gif {
+  opacity: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url(/Image/holy.gif) center center repeat;
+
+  /* !Undraggable */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#title {
+  font-family: "Child Writing";
+  white-space: nowrap;
+  position: relative;
+  top: 30%;
+  font-size: 8vh;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 8px;
 }
