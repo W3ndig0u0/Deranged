@@ -21,16 +21,13 @@ body {
   height: 20%;
 }
 
-.animated-gif {
-  opacity: 0;
-}
-
 .menu {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background: url(/Image/holy.gif) center center repeat;
+  background: url(https://w3ndig0u0.github.io/Deranged/Image/holy.gif) center
+    center repeat;
 
   /* !Undraggable */
   user-select: none;
