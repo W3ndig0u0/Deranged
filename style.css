@@ -15,6 +15,7 @@ body {
 
 audio #playAudio {
   position: absolute;
+  top: 50%;
   size: 1000px;
   color: white;
 }
