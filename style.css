@@ -13,6 +13,12 @@ body {
   overflow: -moz-hidden-unscrollable;
 }
 
+audio #playAudio {
+  position: absolute;
+  size: 1000px;
+  color: white;
+}
+
 .container {
   /* !Img fill */
   width: 100%;
