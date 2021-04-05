@@ -10,14 +10,10 @@ document.addEventListener('readystatechange', event => {
 });
 
 var text = new Array("welcome back, we missed you,");
-
 var i = 0;
 var arrayLength = text[0].length;
 var position = 0;
-
 randomnumber = Math.floor(Math.random() * (200 - 500 + 1)) + 500;
-
-
 
 function write()
 {
@@ -35,4 +31,12 @@ function write()
    setTimeout("write()", randomnumber);
  }
  console.log(randomnumber);
+}
+
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (!isChrome){
+    $('#iframeAudio').remove()
+}
+else {
+    $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
 }
