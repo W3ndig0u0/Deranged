@@ -1,0 +1,26 @@
+@font-face {
+  /* !Custom Font */
+  font-family: "Child Writing";
+  src: url("Fonts/ChildWriting-Regular.woff2") format("woff2"),
+    url("Fonts/ChildWriting-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body,
+html {
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+audio #playAudio {
+  z-index: 100000;
+  position: absolute;
+  top: 50%;
+  size: 1000px;
+  color: white;
+}

@@ -1,0 +1,36 @@
+.container {
+  /* !Img fill */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 20%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url(https://w3ndig0u0.github.io/Deranged/Image/holy.gif) center
+    center repeat;
+
+  /* !Undraggable */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#title {
+  font-family: "Child Writing";
+  white-space: nowrap;
+  position: relative;
+  top: 30%;
+  font-size: 8vh;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 8px;
+}
