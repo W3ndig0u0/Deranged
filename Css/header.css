@@ -12,13 +12,6 @@
   z-index: 100;
   background: url(https://w3ndig0u0.github.io/Deranged/Image/holy.gif) center
     center repeat;
-
-  /* !Undraggable */
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 #title {

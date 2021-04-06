@@ -3,6 +3,7 @@ var text = new Array("welcome back, we missed you");
 var i = 0;
 var arrayLength = text[0].length;
 var position = 0;
+var loader = document.querySelector(".loader");
 
 // !random hastighet
 var randomnumber = Math.floor(Math.random() * (200 - 500 + 1)) + 500;
@@ -13,7 +14,7 @@ document.addEventListener('readystatechange', event => {
   // !starta när allt är redo
 
   write();
-  // audio.play();
+  loader.className += " hidden";
   console.log("Start");
 }
 });
