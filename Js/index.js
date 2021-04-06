@@ -1,19 +1,22 @@
+var audio = new Audio("Sounds/Breathing.mp3");
+var text = new Array("welcome back, we missed you");
+var i = 0;
+var arrayLength = text[0].length;
+var position = 0;
+
+// !random hastighet
+var randomnumber = Math.floor(Math.random() * (200 - 500 + 1)) + 500;
+
 document.addEventListener('readystatechange', event => { 
 
   if (event.target.readyState === "complete") {
   // !starta när allt är redo
 
   write();
+  // audio.play();
   console.log("Start");
 }
 });
-
-var text = new Array("welcome back, we missed you,");
-var i = 0;
-var arrayLength = text[0].length;
-var position = 0;
-// !random hastighet
-randomnumber = Math.floor(Math.random() * (200 - 500 + 1)) + 500;
 
 function write()
 {
@@ -32,4 +35,16 @@ function write()
    setTimeout("write()", randomnumber);
  }
  console.log(randomnumber);
+}
+
+function play()
+{
+  audio.loop = true;
+  audio.play();
+  if (audio.loop) {
+    console.log("play loop");
+  }
+  else{
+    console.log("no loop");
+  }
 }
